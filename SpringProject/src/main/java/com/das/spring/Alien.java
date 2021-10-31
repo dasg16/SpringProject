@@ -8,12 +8,8 @@ public class Alien {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("alien.xml");
 
 		DasFamily dasFamily = (DasFamily) applicationContext.getBean("DasFamily");
-//		dasFamily.printWelcome();
-		dasFamily.numberOfMembers = 6;
-		System.out.println(dasFamily.numberOfMembers);
-
-		DasFamily dasFamily2 = (DasFamily) applicationContext.getBean("DasFamily");
-		System.out.println(dasFamily2.numberOfMembers);
+		dasFamily.printWelcome();
+		System.out.println(dasFamily.getNumberOfRooms());
 
 	}
 }

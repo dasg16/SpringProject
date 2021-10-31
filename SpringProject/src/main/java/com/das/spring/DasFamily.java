@@ -9,13 +9,13 @@ public class DasFamily {
 		System.out.println("Creating the obj ");
 	}
 
-	public DasFamily(int numberOfRooms) {
-		this.numberOfRooms = numberOfRooms;
-	}
-
-	public DasFamily(Dog dog) {
-		this.dog = dog;
-	}
+//	public DasFamily(int numberOfRooms) {
+//		this.numberOfRooms = numberOfRooms;
+//	}
+//
+//	public DasFamily(Dog dog) {
+//		this.dog = dog;
+//	}
 
 	private int numberOfMembers;
 
@@ -42,6 +42,16 @@ public class DasFamily {
 
 	private Dog dog;
 
+	private Animals animals;
+
+	public Animals getAnimals() {
+		return animals;
+	}
+
+	public void setAnimals(Animals animals) {
+		this.animals = animals;
+	}
+
 	public Cats getCats() {
 		return cats;
 	}
@@ -62,6 +72,12 @@ public class DasFamily {
 		System.out.println("Welcome to the family");
 		cats.printCatNames();
 		dog.printDogName();
+
+	}
+
+	public void printScientificName() {
+		System.out.println("Printing the Scientific Name ");
+		animals.animalScientificGroup();
 
 	}
 }

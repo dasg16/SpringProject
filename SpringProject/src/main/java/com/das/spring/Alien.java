@@ -5,11 +5,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Alien {
 	public static void main(String[] args) {
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("alien.xml");
+		// ApplicationContext applicationContext = new
+		// ClassPathXmlApplicationContext("alien.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("autowire.xml");
 
 		DasFamily dasFamily = (DasFamily) applicationContext.getBean("DasFamily");
-		dasFamily.printWelcome();
-		System.out.println(dasFamily.getNumberOfRooms());
+		// dasFamily.printWelcome();
+		// System.out.println(dasFamily.getNumberOfRooms());
+		dasFamily.printScientificName();
 
 	}
 }

@@ -3,17 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="DasFamily" class="com.das.spring.DasFamily">
-<!-- <constructor-arg value = "2"></constructor-arg> -->
-<!-- <constructor-arg ref = "dog"></constructor-arg> -->
-
+<bean id="DasFamily" class="com.das.spring.DasFamily" autowire = "byType">
 <property name="numberOfMembers" value = "6"></property>
-<property name="Cats" ref = "cats"></property>
+
 </bean>
-<bean id="cats" class="com.das.spring.Cats">
+<bean id="animals" class="com.das.spring.Cats">
 </bean>
-<bean id="dog" class="com.das.spring.Dog">
+<bean id="dog" class="com.das.spring.Dog" primary = "true">
 </bean>
 </beans>
-
-

@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <bean id="DasFamily" class="com.das.spring.DasFamily">
 <!-- <constructor-arg value = "2"></constructor-arg> -->
-<constructor-arg ref = "dog"></constructor-arg>
+<!-- <constructor-arg ref = "dog"></constructor-arg> -->
 
 <property name="numberOfMembers" value = "6"></property>
 <property name="Cats" ref = "cats"></property>
